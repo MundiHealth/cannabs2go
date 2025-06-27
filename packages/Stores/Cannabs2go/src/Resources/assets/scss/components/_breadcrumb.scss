@@ -1,0 +1,89 @@
+//
+// Breadcrumb
+// --------------------------------------------------
+
+.breadcrumb-area {
+  background-color: #f5f5f5;
+
+  .breadcrumb-text {
+    position: relative;
+    z-index: 1;
+
+    > h1 {
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+  }
+
+  .breadcrumb-menu {
+    li {
+      display: inline-block;
+      position: relative;
+      padding: 0 15px;
+
+        a, span {
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.3s ease 0s;
+        }
+
+         a {
+                color: $second-color;
+         }
+
+        span {
+            color: #677b8a;
+        }
+
+      &:before {
+        color: #222;
+        content: "\f054";
+        display: inline-block;
+        font-size: 10px;
+        left: -5px;
+        padding-bottom: 0;
+        position: absolute;
+        top: 0;
+        font-weight: 600;
+        font-family: $second-font;
+      }
+
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+
+  }
+}
+
+//@media only screen and (max-width: 767px) {
+//  .breadcrumb-area {
+//    .breadcrumb-text {
+//      > h1 {
+//        font-size: 32px;
+//        line-height: 48px;
+//      }
+//    }
+//
+//    .breadcrumb-menu {
+//      li {
+//        a {
+//          font-size: 18px;
+//        }
+//
+//        &:before {
+//          top: 2px;
+//        }
+//      }
+//
+//      span {
+//        font-size: 18px;
+//      }
+//    }
+//  }
+//}

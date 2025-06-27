@@ -1,0 +1,84 @@
+//
+// Search Modal
+// --------------------------------------------------
+
+.main-menu-area {
+    &.sticky + .search-open {
+        position: fixed;
+        top: 80px;
+
+        //@media only screen and (min-width: 768px) {
+        //    top: 127px;
+        //}
+
+        @media only screen and (min-width: 1200px) {
+            top: 120px;
+        }
+    }
+}
+
+.search-icon {
+    cursor: pointer;
+}
+.search-open {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+
+    .fa-times {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: #ccc;
+        font-size: 24px;
+        height: 24px;
+
+        @media only screen and (min-width: 992px) {
+            right: 20px;
+        }
+    }
+
+    form {
+        position: relative;
+
+        input {
+            width: 100%;
+            font-size: 18px;
+            border: none;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+            background: 0 0;
+            color: $fourth-color;
+            padding-left: 15px;
+            line-height: 58px;
+
+            @media only screen and (min-width: 992px) {
+                padding-left: 100px;
+            }
+
+            @include placeholder {
+                font-size: 18px;
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 45px;
+            font-size: 25px;
+            color: $primary-color;
+            background: 0 0;
+            border: none;
+            cursor: pointer;
+            top: 12px;
+
+            @media only screen and (min-width: 992px) {
+                right: 100px;
+            }
+        }
+    }
+}

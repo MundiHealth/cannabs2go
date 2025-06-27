@@ -1,0 +1,113 @@
+//
+// blog
+// --------------------------------------------------
+
+.blog {
+    // p {
+    //     strong {
+    //         font-weight: 500;
+    //     }
+    // }
+
+    .intro {
+        .container > h2 {
+            text-align: center;
+            color: $blue;
+            padding-bottom: 40px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+            filter: grayscale(1);
+            opacity: 0.5;
+
+            .-text {
+                p {
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .-categories {
+                h3 {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                ul {
+                    margin-bottom: 24px;
+
+                    li {
+                        position: relative;
+                        padding: 7.5px 0 7.5px 24px;
+                        font-weight: 500;
+
+                        &:before {
+                            content: '\f178';
+                            font-family: $second-font;
+                            font-weight: 900;
+                            -webkit-font-smoothing: antialiased;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            color: $green;
+                            font-size: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .blog {
+        .intro {
+            .content {
+                flex-direction: row;
+
+                .-text {
+                    width: 60%;
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+                .-categories {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .blog {
+        .intro {
+            .content {
+                gap: 60px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .blog {
+        .intro {
+            .content {
+                gap: 80px;
+            }
+        }
+    }
+}

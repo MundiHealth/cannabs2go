@@ -1,0 +1,26 @@
+{
+    "name": "kaiorocha/bagisto-primeiropay",
+    "license": "MIT",
+    "require": {
+        "ixudra/curl": "6.*"
+    },
+    "authors": [
+        {
+            "name": "Kaio Rocha",
+            "email": "kaio.f.roch@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OnNow\\PrimeiroPay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnNow\\PrimeiroPay\\Providers\\PaymentServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

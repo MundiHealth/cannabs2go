@@ -1,0 +1,63 @@
+//
+// Alerts
+// --------------------------------------------------
+
+.alert-wrapper {
+    width: 300px;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    z-index: 100;
+    text-align: left;
+
+    .alert {
+        width: 300px;
+        padding: 15px;
+        border-radius: 3px;
+        display: inline-block;
+        box-shadow:
+            0px 4px 15.36px 0.64px rgba(0, 0, 0, 0.1),
+            0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+        position: relative;
+        animation: jelly 0.5s ease-in-out;
+        transform-origin: center top;
+        z-index: 500;
+        margin-bottom: 10px;
+
+        &.alert-error {
+            background-color: #fb3949;
+        }
+
+        &.alert-info {
+            background-color: #204d74;
+        }
+
+        &.alert-success {
+            background-color: #4caf50;
+        }
+
+        &.alert-warning {
+            background-color: #e6820f;
+        }
+
+        .icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+
+            &.white-cross-sm-icon {
+                background-image: url('../img/exit.svg');
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        p {
+            color: #ffffff;
+            margin: 0px;
+            padding: 0px;
+            font-size: 15px;
+        }
+    }
+}

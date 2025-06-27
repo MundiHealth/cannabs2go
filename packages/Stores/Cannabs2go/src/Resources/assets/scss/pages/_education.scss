@@ -1,0 +1,181 @@
+//
+// Página Educação
+// --------------------------------------------------
+
+.page-education {
+    // education
+    .education-area {
+
+        .education-tab {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 330px;
+            margin: 0 auto 30px;
+
+            li {
+                position: relative;
+
+                a {
+                    padding: 0;
+
+                    .education-tab-content{
+                        h2 {
+                            font-size: 16px;
+                            font-weight: 500;
+                            padding-bottom: 10px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    &.active {
+                        h2 {
+                            border-bottom: 4px solid $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            .podcasts,
+            .webinars {
+                .info {
+                    margin-bottom: 40px;
+
+                    .-img {
+                        img {
+                            float: left;
+                            width: 50%;
+                            max-width: 200px;
+                        }
+                    }
+
+                    .-text {
+                        clear: both;
+
+                        h3 {
+                            font-weight: 700;
+                            color: $primary-color;
+                        }
+
+                        p {
+                            font-weight: 500;
+                        }
+                    }
+
+                    .btn {
+                        text-transform: inherit;
+                    }
+                }
+            }
+
+            .faq {
+                .info {
+                    iframe {
+                        display: block;
+                        width: 100%;
+                        height: 200px;
+                        margin: 0 auto 10px;
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                        min-height: 50px;
+                    }
+
+                    @media only screen and (min-width: 450px) {
+                        iframe {
+                            min-height: 240px;
+                        }
+                    }
+
+                    @media only screen and (min-width: 560px) {
+                        iframe {
+                            min-height: 300px;
+                        }
+                    }
+
+                    @media only screen and (min-width: 680px) {
+                        iframe {
+                            min-height: 288px;
+                        }
+                    }
+
+                    @media only screen and (min-width: 768px) {
+                        float: left;
+                        width: 50%;
+                        padding: 10px;
+
+                        iframe {
+                            min-height: 280px;
+                        }
+                    }
+
+                    @media only screen and (min-width: 992px) {
+                        iframe {
+                            min-height: 268px;
+                        }
+                    }
+
+                    @media only screen and (min-width: 1200px) {
+                        width: 33.3%;
+
+                        iframe {
+                            min-height: 208px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    // education
+    .education-area {
+        .tab-content {
+            .podcasts,
+            .webinars {
+                .info {
+                    display: flex;
+                    flex-wrap: wrap;
+                    //align-items: center;
+                    flex-direction: row-reverse;
+
+                    .-text {
+                        flex: 0 0 50%;
+                        padding-right: 20px;
+                    }
+
+                    .-img {
+                        flex: 0 0 50%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    // education
+    .education-area {
+        .tab-content {
+            .podcasts,
+            .webinars {
+                .info {
+                    .-text {
+                        flex: 0 0 65%;
+                    }
+
+                    .-img {
+                        flex: 0 0 35%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+

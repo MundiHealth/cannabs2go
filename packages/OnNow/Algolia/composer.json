@@ -1,0 +1,28 @@
+{
+    "name": "kaiorocha/bagisto-algolia",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Rocha",
+            "email": "kaio.f.roch@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/scout": "^8.0@dev",
+        "algolia/algoliasearch-client-php": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "OnNow\\Algolia\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnNow\\Algolia\\Providers\\AlgoliaServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

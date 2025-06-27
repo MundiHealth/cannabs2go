@@ -1,0 +1,347 @@
+//
+// Página Inicial
+// --------------------------------------------------
+
+.page-home {
+    h1 {
+        text-align: center;
+    }
+
+    h2, h3 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .section-title {
+        text-transform: uppercase;
+    }
+
+    // info
+    .info-area {
+        background-color: $third-color;
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+            flex: 0 0 60%;
+
+            &:last-child {
+                margin: 0;
+                flex: 0 0 40%;
+                text-align: right;
+            }
+        }
+
+        .btn {
+            font-size: 16px;
+
+            &:before {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+
+    #cannabis {
+        max-width: 800px;
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+
+            a {
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+// intro
+.intro-area {
+    .container {
+        max-width: 890px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 300;
+
+        strong {
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+}
+
+// code
+.code-area {
+    .code {
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 1060px;
+        margin: 0 auto;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+
+        .-img {
+            img {
+                width: 100%;
+                max-width: 470px;
+            }
+        }
+        .-text {
+            h2 {
+                font-weight: 600;
+                font-size: 30px;
+                color: $second-color;
+                text-align: left;
+            }
+
+            p {
+                font-size: 22px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+// brands
+.brands-area {
+    padding: 60px 0;
+
+    .brands {
+        .slick-track {
+            padding: 30px 0;
+        }
+
+        .brands-item {
+            padding: 0 15px;
+            height: 102px;
+
+            .brands-wrapper {
+                padding: 10px 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+
+                img {
+                    height: 80px;
+                    margin: 0 auto;
+                    max-width: 100%;
+                }
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// pages
+.pages-area {
+    .pages {
+        max-width: 960px;
+        margin: 0 auto;
+        display: block;
+
+        .educacao,
+        .produtos {
+            margin: 0 auto 20px;
+            max-width: 460px;
+            height: 289px;
+            width: 100%;
+
+            >div {
+                position: relative;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+
+                    span {
+                        position: absolute;
+                        right: 20px;
+                        bottom: 15px;
+                        color: #fff;
+                        font-size: 30px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-family: $third-font;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// categories
+.categories-area {
+    .categories {
+        .col {
+            padding: 0;
+        }
+
+        .categories-item {
+            height: auto;
+            padding: 10px;
+
+            .categories-wrapper {
+                position: relative;
+                height: 316px;
+                margin: 0 auto;
+                border-radius: 20px;
+                background-position: center;
+                background-size: cover !important;
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+
+                a {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+
+                .price {
+                    position: absolute;
+                    right: 15px;
+                    bottom: 15px;
+                    width: 100px;
+                    height: 100px;
+                    display: block;
+                    padding: 20px 0;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: 22px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    text-align: center;
+                    text-transform: uppercase;
+                    background-color: $primary-color;
+                    font-family: $third-font;
+                }
+            }
+        }
+    }
+}
+
+// especialista
+.especialista-area {
+    .especialista {
+        padding: 30px 20px;
+        border-radius: 10px;
+        max-width: 1060px;
+        margin: 0 auto;
+        background-color: $primary-color;
+        background-image: url("../img/home/bg-especialista.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+
+        .-text {
+            max-width: 450px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+
+            h3, p {
+                color: #fff;
+                font-size: 25px;
+            }
+
+            p {
+                font-weight: 300;
+            }
+
+            h3 {
+                font-weight: 700;
+            }
+
+            .btn {
+                background-color: $third-color !important;
+
+                &:hover {
+                    background-color: darken($third-color, 15%) !important;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    // code
+    .code-area {
+        .code {
+            display: flex;
+            align-items: center;
+
+            .-img {
+                flex: 0 0 60%;
+                text-align: right;
+
+                img { margin-right: 30px; }
+            }
+            .-text {
+                flex: 0 0 40%;
+            }
+        }
+    }
+
+    // pages
+    .pages-area {
+        .pages {
+            display: flex;
+            align-items: center;
+
+            .educacao,
+            .produtos {
+                padding: 20px;
+                margin-bottom: 0;
+
+                >div {
+
+                }
+            }
+        }
+    }
+
+    // categories
+    .categories-area {
+        .categories {
+            .categories-item {
+                width: 33.3%;
+                float: left;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+    .page-home {
+        .search-open {
+            top: 132px;
+        }
+    }
+}

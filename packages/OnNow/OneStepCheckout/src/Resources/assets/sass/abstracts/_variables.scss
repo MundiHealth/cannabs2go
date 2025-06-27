@@ -1,0 +1,25 @@
+//
+// Variáveis
+// --------------------------------------------------
+
+// --- Cores
+$primary-color: #14328c;
+$second-color: #0f99d6;
+$third-color: #112433;
+$fourth-color: #596369;
+
+$brand-color: $second-color;
+$border-color: #eaedff;
+$font-light: $fourth-color;
+$other-font-color: darken($font-light, 5%);
+$font-dark: $third-color;
+$title-color: $third-color;
+$bold-color: $fourth-color;
+$info-color: $primary-color;
+$btn-background-color: #fff;
+
+
+// --- Fontes
+$primary-font: 'Rubik', sans-serif;
+$second-font: 'Font Awesome 5 Free';
+

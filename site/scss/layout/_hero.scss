@@ -1,0 +1,109 @@
+//
+// hero das páginas
+// --------------------------------------------------
+
+.hero {
+    display: flex;
+    align-items: center; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .content {
+        max-width: 520px;
+    }
+}
+
+.home {
+    .hero {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/home/hero-mypharma-tratamentos-avancados.jpg");
+        min-height: 50vh;
+        
+        .content {
+            p {
+                color: $white;
+                font-weight: 600;
+                font-size: 30px;
+    
+                span {
+                    color: $light-green;
+                    font-weight: 500;
+                    font-size: 24px;
+                }
+    
+                small {
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+    
+                &:last-child {
+                    line-height: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+.about,
+.services,
+.public,
+.public-child,
+.blog,
+.ecommerce,
+.contact {
+    .hero {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-mypharma-paginas-internas-02.jpg");
+        min-height: 32vh;
+
+        .content {
+            // margin: 0 auto;
+            // text-align: center;
+
+            h1 {
+                color: $light-green;
+    
+                span {
+                    display: block;
+                    font-weight: 400;
+                    color: $white;
+                    font-size: 18px;
+                    line-height: 1.5em;
+                }
+            }
+        }
+
+        
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .home {
+        .hero {
+            min-height: 70vh;
+
+            .content {
+                p {
+                    font-size: 44px;
+        
+                    span {
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero {
+        margin: 0 20px;
+        border-radius: 20px;
+    }
+
+    .home {
+        .hero {
+            min-height: 82vh;
+        }
+    }
+}

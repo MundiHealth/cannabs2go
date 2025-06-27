@@ -1,0 +1,24 @@
+{
+    "name": "kaiorocha/bagisto-exchangerate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Rocha",
+            "email": "kaio@onnow.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "OnNow\\ExchangeRate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnNow\\ExchangeRate\\Providers\\ExchangeRateServiceProvider"
+            ]
+        }
+    }
+}

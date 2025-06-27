@@ -1,0 +1,34 @@
+//
+// Página de Sucesso
+// --------------------------------------------------
+
+.order-success-content {
+    //border-bottom: 10px solid #fff;
+
+    .alert,.info {
+        font-size: 14px;
+    }
+
+    .info {
+        margin-top: 15px;
+
+        b {
+            font-weight: 500;
+        }
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-header {
+        background-color: $second-color;
+        color: #fff;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
+
+

@@ -1,0 +1,45 @@
+//
+// detalhes
+// --------------------------------------------------
+
+// loading
+.se-pre-con {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../img/loading.svg") center no-repeat #fff;
+}
+
+// scrollbar
+::-webkit-scrollbar-track {
+    background-color: $gray;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: $gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $blue;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    // overlay
+    .overlay {
+        &.active {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .5);
+            overflow: hidden;
+            z-index: 2;
+        }
+    }
+}

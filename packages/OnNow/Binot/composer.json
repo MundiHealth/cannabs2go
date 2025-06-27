@@ -1,0 +1,25 @@
+{
+    "name": "kaiorocha/binot",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Rocha",
+            "email": "kaio.f.roch@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "OnNow\\Binot\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnNow\\Binot\\Providers\\BinotServiceProvider"
+            ]
+        }
+    }
+
+}

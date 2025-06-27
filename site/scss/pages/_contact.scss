@@ -1,0 +1,139 @@
+//
+// contact
+// --------------------------------------------------
+
+.contact {
+    .intro {
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .-form {
+                form {
+                    margin-top: 30px;
+
+                    fieldset {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .field {
+                            label {
+                                display: block;
+                                margin-bottom: 5px;
+                            }
+
+                            input,
+                            select,
+                            textarea {
+                                width: 100%;
+                                color: $blue;
+                                padding: 0 15px;
+                                font-size: 16px;
+                                line-height: 40px;
+                                font-family: $primary-font;
+                                border-radius: 5px;
+                                border: 1px solid $opacity-green;
+                            }
+
+                            select {
+                                height: 42px;
+                            }
+
+                            textarea {
+                                padding: 15px;
+                                line-height: 1.2em;
+                                min-height: 140px;
+                                resize: none;
+                            }
+
+                            button {
+                                border: 0;
+                                cursor: pointer;
+                                font-family: $primary-font;
+                            }
+
+                            &.-half {
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                gap: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .-contact {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                ul {
+                    li {
+                        i, svg {
+                            color: $green;
+                            padding-right: 8px;
+                            font-size: 20px;
+                        }
+
+                        a {
+                            font-weight: 500;
+                            color: $blue;
+    
+                            &:hover {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .contact {
+        .intro {
+            .content {
+                flex-direction: row;
+                // align-items: center;
+
+                .-form {
+                    form {
+                        fieldset {
+                            .field {
+                                &.-half {
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .-contact {
+                    ul {
+                        li {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact {
+        .intro {
+            .content {
+                gap: 80px;
+            }
+        }
+    }
+}

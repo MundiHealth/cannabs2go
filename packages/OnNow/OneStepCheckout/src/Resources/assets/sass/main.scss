@@ -1,0 +1,30 @@
+// abstracts
+@import
+'abstracts/_mixins',
+'abstracts/_variables';
+
+// vendors
+@import
+'vendors/_bootstrap.min',
+'vendors/_animate.min',
+'vendors/_fontawesome-all.min';
+
+// base
+@import
+'base/_default',
+'base/_base';
+
+// layout
+@import
+'layout/_forms',
+'layout/_header',
+'layout/_widget',
+'layout/_footer';
+
+// components
+@import
+'components/_buttons',
+'components/_search',
+'components/_breadcrumb',
+'components/_alerts',
+'components/_trumps';

@@ -1,0 +1,57 @@
+//
+// Forms
+// --------------------------------------------------
+
+.form {
+  input,
+  select {
+    height: 58px;
+    width: 100%;
+    border: 1px solid #e9e9e9;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    color: #7b8e9d;
+    font-size: 14px;
+    transition: .3s;
+    background: #fff;
+    font-weight: 400;
+
+    input {
+      @include placeholder {
+        color: #7b8e9d;
+        font-size: 14px;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      border: 1px solid #e9e9e9;
+      padding: 15px;
+      height: 150px;
+      transition:.3s;
+      background: #fff;
+      font-weight:400;
+      color:#7b8e9d;
+      margin-bottom: 20px;
+
+      @include placeholder {
+        color: #7b8e9d;
+        font-size: 14px;
+        font-weight:400;
+      }
+    }
+  }
+
+    input[type='checkbox'] {
+        height: 15px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .form {
+    .btn {
+      padding: 22px 53px;
+    }
+  }
+}

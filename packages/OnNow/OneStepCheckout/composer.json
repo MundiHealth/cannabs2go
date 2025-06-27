@@ -1,0 +1,26 @@
+{
+    "name": "kaiorocha/bagisto-onestepcheckout",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Rocha",
+            "email": "kaio.f.roch@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "cagartner/correios-consulta": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "OnNow\\OneStepCheckout\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnNow\\OneStepCheckout\\Providers\\OneStepCheckoutServiceProvider"
+            ]
+        }
+    }
+}

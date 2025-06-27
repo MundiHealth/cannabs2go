@@ -1,0 +1,24 @@
+{
+    "name": "kaiorocha/xdeasy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Rocha",
+            "email": "kaio.f.roch@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OnNow\\Xdeasy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnNow\\Xdeasy\\Providers\\XdeasyServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

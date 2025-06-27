@@ -1,0 +1,36 @@
+//
+// Página de Categoria
+// --------------------------------------------------
+
+.product-area {
+    .layered-filter-wrapper {
+        .filter-title {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .filter-content {
+            .filter-attributes {
+                .filter-attributes-item {
+                    padding: 10px 0;
+                    border-bottom: 2px solid #eaedff;
+                    max-height: 226px;
+                    overflow-x: hidden;
+
+                    .filter-attributes-title {
+                        font-weight: 500;
+                        font-size: 15px;
+                        margin-bottom: 5px;
+                    }
+
+                    .items {
+                        .item {
+                            font-size: 13px;
+                            padding: 2px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+//
+// import scss
+// --------------------------------------------------
+
+// external
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+// abstracts
+@import
+    'abstracts/variables',
+    'abstracts/animations',
+    'abstracts/mixins';
+
+// vendors
+@import
+    'vendors/reset';
+
+//base
+@import
+    'base/base';
+
+//layout
+@import
+    'layout/header',
+    'layout/hero',
+    'layout/footer';
+
+// components 
+@import
+    'components/buttons',
+    'components/section',
+    'components/details';
+
+// pages
+@import
+    'pages/home',
+    'pages/about',
+    'pages/services',
+    'pages/public',
+    'pages/public_child',
+    'pages/blog',
+    'pages/ecommerce',
+    'pages/contact';

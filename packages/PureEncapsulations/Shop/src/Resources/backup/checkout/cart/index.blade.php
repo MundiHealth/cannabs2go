@@ -1,0 +1,1 @@
+@include('onestepcheckout::checkout.cart.index')

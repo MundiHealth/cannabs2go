@@ -1,0 +1,88 @@
+//
+// Página FAQ
+// --------------------------------------------------
+
+.page-faq {
+    .faq-area {
+        .container {
+            max-width: 992px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .accordion {
+            margin: 30px auto 80px;
+            border-bottom: 1px solid #e4e4e4;
+
+            .question {
+                border-bottom: 1px solid #e4e4e4;
+                position: relative;
+
+                h3 {
+                    width: 100%;
+                    display: block;
+                    cursor: pointer;
+                    line-height: 3;
+                    margin: 0;
+                    font-size: 16px;
+                    text-transform: inherit;
+                    text-align: left;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        right: 20px;
+                        top: 23px;
+                        width: 8px;
+                        height: 8px;
+                        border-right: 1px solid $second-color;
+                        border-bottom: 1px solid $second-color;
+                        @include rotate(-45deg);
+                        @include transition(all 0.2s ease-in-out);
+                    }
+
+                    &.active:after {
+                        @include rotate(45deg);
+                        @include transition(all 0.2s ease-in-out);
+                    }
+                }
+
+                .-text {
+                    display: none;
+
+                    ul {
+                        margin-left: 15px;
+
+                        li {
+                            list-style: disc;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    a {
+                        color: $primary-color;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: $second-color;
+                        }
+                    }
+
+                    p {
+                        strong {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

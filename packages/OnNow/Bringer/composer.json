@@ -1,0 +1,25 @@
+{
+    "name": "kaiorocha/bagisto-bringer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Rocha",
+            "email": "kaio.f.roch@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "OnNow\\Bringer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnNow\\Bringer\\Providers\\BringerServiceProvider"
+            ]
+        }
+    }
+
+}

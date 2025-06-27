@@ -1,0 +1,25 @@
+{
+    "name": "kaiorocha/bagisto-cart-limit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Rocha",
+            "email": "kaio.f.roch@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "OnNow\\CartLimit\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnNow\\CartLimit\\Providers\\CartLimitServiceProvider"
+            ]
+        }
+    }
+
+}

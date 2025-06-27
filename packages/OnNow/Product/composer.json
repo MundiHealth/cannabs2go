@@ -1,0 +1,26 @@
+{
+    "name": "kaiorocha/bagisto-product",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Rocha",
+            "email": "kaio.f.roch@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "OnNow\\Product\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnNow\\Product\\Providers\\ProductServiceProvider"
+            ]
+        }
+    }
+}

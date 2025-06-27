@@ -1,0 +1,178 @@
+//
+// CSS Base
+// --------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
+
+* {
+    font-family: $primary-font;
+}
+
+body {
+    font-family: $primary-font;
+    font-weight: normal;
+    font-style: normal;
+}
+
+a,
+button {
+    color: $second-color;
+    outline: medium none;
+    @include transition(all 0.3s ease-out 0s);
+
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+label {
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+
+    &.required {
+        &:after {
+            content: " *";
+            color: #dc4141;
+            font-size: 17px;
+            font-weight: 700;
+            display: inline-block;
+        }
+    }
+}
+button{
+    cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+    font-family: $primary-font;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $primary-font;
+    font-weight: normal;
+    color: $third-color;
+    margin-top: 0;
+    font-style: normal;
+    text-transform: normal;
+
+    a {
+        color: inherit;
+    }
+}
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 28px;
+}
+h4 {
+    font-size: 22px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none
+    }
+}
+
+p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    color: $fourth-color;
+    margin-bottom: 15px;
+}
+
+hr {
+    border-bottom: 1px solid #eceff8;
+    border-top: 0 none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+.f-left {
+    float: left
+}
+.f-right {
+    float: right;
+    max-width: 100%;
+}
+.fix {
+    overflow: hidden
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+.separator {
+    border-top: 1px solid #f2f2f2
+}
+
+*::-moz-selection {
+    background: #d6b161;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+*::-moz-placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+*::placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}

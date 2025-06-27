@@ -1,0 +1,118 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn {
+    color: #fff !important;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 22px 42px;
+    position: relative;
+    transform: perspective(1px) translateZ(0px);
+    transition: .3s;
+    vertical-align: middle;
+    background: $primary-color !important;
+    border-radius: 5px !important;
+    border:none;
+    max-width: 100%;
+    white-space: inherit;
+
+  &:hover {
+      color: #fff;
+
+    &:before {
+      transform: scaley(1);
+      border-radius: 5px !important;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius:0;
+    background: $second-color;
+    transform: scaleY(0);
+    transform-origin: 50% 0 0;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  }
+}
+
+// read more
+.widget-button {
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  i {
+    transition: .3s;
+    display: inline-block;
+  }
+
+  &:hover {
+    i {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.btn-default {
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #0f99d6 !important;
+    outline: medium none;
+    cursor: pointer;
+    padding-left: 20px;
+    @include transition(color 0.3s ease-out 0s);
+
+    &:hover {
+        color: #0056b3 !important;
+    }
+
+    &.-back {
+        position: absolute;
+        right: 0;
+        top: -52px;
+
+        &:before {
+            content:'\f060';
+            position: absolute;
+            left: 0;
+            font-family: $second-font;
+            font-weight: 900;
+        }
+    }
+
+    &.-delete {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+
+        &:before {
+            content:'\f1f8';
+            position: absolute;
+            left: 0;
+            font-family: $second-font;
+            font-weight: 900;
+        }
+    }
+}
+
+.btn-continue {
+    color: #e06a05;
+
+    &:hover {
+        color: darken(#e06a05, 5%);
+    }
+}

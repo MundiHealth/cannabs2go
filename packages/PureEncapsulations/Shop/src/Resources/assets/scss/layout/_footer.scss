@@ -1,0 +1,129 @@
+//
+// Footer
+// --------------------------------------------------
+
+.footer-area {
+  background-color: #eef4fa;
+
+  .footer-wrapper{
+    .footer-logo {
+        margin-bottom: 30px;
+
+        img {
+            max-width: 300px;
+            width: 100%;
+        }
+        small {
+            display: block;
+            margin-top: 15px;
+            color: #132667;
+
+            @media only screen and (min-width: 768px) {
+                text-align: right;
+            }
+
+            strong {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .footer-text{
+      p {
+        color: $fourth-color;
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-link{
+      li {
+        color: $fourth-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+
+        a {
+          color: $fourth-color;
+
+          &:hover {
+            color: $second-color;
+          }
+        }
+
+        i {
+          margin-top: 8px;
+          width: 30px;
+          float: left;
+        }
+        span {
+          overflow: hidden;
+          display: block;
+        }
+        b {
+          font-weight: 500;
+        }
+
+        &:last-child {
+          margin-top: 20px;
+          margin-bottom:0;
+        }
+      }
+    }
+
+    .footer-title {
+      margin-bottom: 25px;
+
+      h4 {
+        font-size: 22px;
+        color: $fourth-color;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+    }
+
+    .footer-menu {
+      li {
+        padding-bottom: 6px;
+
+        a {
+          color: $fourth-color;
+          font-size: 14px;
+          font-weight: 400;
+          transition: .3s;
+
+          &:hover {
+            color: $second-color;
+          }
+        }
+
+        &:last-child{padding-bottom:0;}
+      }
+    }
+  }
+
+  .footer-bottom-area {
+    border-top: 1px solid #a2abb1;
+    padding: 21px 0;
+
+    .copyright{
+      p {
+        color: #a2abb1;
+        font-size: 13px;
+        margin-bottom:0;
+
+        a {
+          color: $fourth-color;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .footer-area {
+    .footer-wrapper {
+      padding-left: 0;
+    }
+  }
+}

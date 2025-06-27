@@ -1,0 +1,78 @@
+//
+// base da aplicação
+// --------------------------------------------------
+
+* {
+	padding: 0;
+	margin: 0;
+	@include box-sizing(border-box);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: $blue;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $primary-font;
+	background-color: $white;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $green;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+    font-family: $primary-font;
+}
+
+h1 { font-size: 26px; }
+h2 { font-size: 28px; }
+h3 { font-size: 22px; }
+h4 { font-size: 20px; }
+
+p, 
+li {
+    line-height: 1.2em;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    @include transition(all ease-in-out .3s);
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+strong {
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    h1 { font-size: 30px; }
+    h2 { font-size: 36px; }
+    h3 { font-size: 24px; }
+    h4 { font-size: 22px; }
+
+    p { font-size: 18px; }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    h1 { font-size: 38px; }
+    // h2 { font-size: 48px; }
+    // h3 { font-size: 28px; }
+    
+}

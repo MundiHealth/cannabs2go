@@ -1,0 +1,138 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn {
+    color: #fff !important;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 13px 20px;
+    position: relative;
+    transform: perspective(1px) translateZ(0px);
+    transition: .3s;
+    vertical-align: middle;
+    background: $primary-color !important;
+    border: 0;
+    border-radius: 8px !important;
+    max-width: 100%;
+    white-space: inherit;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: $third-font;
+
+    &:hover {
+        color: #fff !important;
+
+        &:before {
+            transform: scaley(1);
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        border-radius: 8px !important;
+        background: $third-color;
+        transform: scaleY(0);
+        transform-origin: 50% 0 0;
+        transition-duration: 0.3s;
+        transition-property: transform;
+        transition-timing-function: ease-out;
+    }
+
+    &.-products {
+        margin: 20px auto 0;
+        display: table;
+        color: $primary-color !important;
+        border: 3px solid $primary-color;
+        background-color: #fff !important;
+
+        &:hover {
+            color: darken($third-color, 10%) !important;
+            border: 3px solid darken($third-color, 10%);
+        }
+
+        &:before {
+            background-color: #fff;
+
+        }
+    }
+}
+
+// read more
+.widget-button {
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    i {
+        transition: .3s;
+        display: inline-block;
+    }
+
+    &:hover {
+        i {
+            transform: translateX(5px);
+        }
+    }
+}
+
+.btn-default {
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #0f99d6 !important;
+    outline: medium none;
+    cursor: pointer;
+    padding-left: 20px;
+    @include transition(color 0.3s ease-out 0s);
+
+    &:hover {
+        color: #0056b3 !important;
+    }
+
+    &.-back {
+        position: absolute;
+        right: 0;
+        top: -52px;
+
+        &:before {
+            content:'\f060';
+            position: absolute;
+            left: 0;
+            font-family: $second-font;
+            font-weight: 900;
+        }
+    }
+
+    &.-delete {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+
+        &:before {
+            content:'\f1f8';
+            position: absolute;
+            left: 0;
+            font-family: $second-font;
+            font-weight: 900;
+        }
+    }
+}
+
+.btn-continue {
+    color: $fourth-color;
+
+    &:hover {
+        color: darken($fourth-color, 8%);
+    }
+}

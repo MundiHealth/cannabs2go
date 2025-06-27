@@ -1,0 +1,87 @@
+//
+// footer da aplicação
+// --------------------------------------------------
+
+footer {
+    background-color: $blue;
+
+    p, a, li {
+        color: $white;
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 46px 0;
+
+        .-item {
+
+            ul {
+                li {
+                    line-height: 1.5em;
+
+                    a {
+                        &:hover {
+                            color: $green;
+                        }
+                    }
+                }
+            }
+            
+
+            &.-mp2go {
+                p {
+                    small {
+                        font-size: 14px;
+                        letter-spacing: 0.5px;
+                    }
+                }
+
+                ul {
+                    li {
+                        display: inline-block;
+                        padding: 0 5px;
+
+                        a {
+                            i {
+                                font-size: 24px;                                
+                            }
+
+                            &:hover {
+                                color: $green;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .copy {
+        border-top: 1px solid $green-blue;
+        text-align: center;
+        padding: 20px 0;
+
+        a {
+            color: $green;
+            font-weight: 600;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        .items {
+            grid-template-columns: 1fr 1fr 1fr;
+        }  
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    footer {
+        margin: 0 20px;
+        border-radius: 20px;
+    }
+}

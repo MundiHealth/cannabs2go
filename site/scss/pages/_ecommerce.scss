@@ -1,0 +1,138 @@
+//
+// e-commerce
+// --------------------------------------------------
+
+.ecommerce {
+    .intro {
+        h2, h3 {
+            text-align: center;
+        }
+
+        h3 {
+            color: $blue;
+            font-weight: 500;
+        }
+
+        .lojas {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 30px;
+
+            .-item {
+                padding: 15px;
+                border-radius: 20px;
+                background-color: #F8F8F8;
+                @include transition(all ease-in-out .3s);
+                // box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+
+                .-img {
+                    height: 268px;
+                    border-radius: 20px;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .-brand {
+                    position: relative;
+                    width: 212px;
+                    height: 112px;
+                    display: block;
+                    background: $white;
+                    border-radius: 20px;
+                    margin: -56px auto;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+                    img {
+                        position: absolute;
+                        max-width: 180px;
+                        max-height: 90%;
+                        right: 0;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+
+                .-text {
+                    text-align: center;
+                    padding: 10px;
+                    margin-top: 62px;
+                    
+                    p {
+                        color: $blue;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+
+                &:hover {
+                    background-color: $opacity-green;
+                }
+            }
+        }        
+    }
+
+    .cta {
+        text-align: center;
+        padding-top: 0;
+
+        .container {
+            max-width: 930px;
+            margin: auto;
+        }
+
+        p {
+            font-weight: 700;
+            margin-bottom: 24px;
+            font-size: 26px;
+        }
+
+        .button {
+            padding-right: 30px;
+
+            i {
+                font-size: 30px;
+                padding-left: 10px;
+                vertical-align: middle;
+            }
+
+            &::after {
+                background-image: none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .ecommerce {
+        .intro {
+            .lojas {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .ecommerce {
+        .intro {
+            .lojas {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .ecommerce {
+        .intro {
+            .lojas {
+                margin-top: 40px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}

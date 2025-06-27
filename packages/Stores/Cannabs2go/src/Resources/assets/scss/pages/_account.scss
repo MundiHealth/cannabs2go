@@ -1,0 +1,27 @@
+//
+// Página de Conta do Usuário
+// --------------------------------------------------
+
+.page-account {
+    .account-head {
+        .account-action {
+            a {
+                color: $third-color;
+            }
+        }
+    }
+    .account-content {
+        .menu-block {
+            .menubar {
+                li {
+                    &.active {
+                        a {
+                            color: $third-color;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
